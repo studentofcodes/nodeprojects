@@ -1,0 +1,42 @@
+.item3 { 
+    grid-area: menu;
+    padding: 20px 20px;
+    background-color: #c1c1c1;
+    text-align: left;
+
+}
+
+.item3 input {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 100%; /* Set input fields to 100% width */
+    height: 20px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.item3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.item3 li select {
+    border: none;
+    width: 100%; /* Set list items to 100% width */
+    background-color: rgb(255, 255, 255);
+}
+
+.donate {
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.item3 button {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    width: 100%;
+
+}

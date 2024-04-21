@@ -1,0 +1,25 @@
+<div class="item2">
+    
+    <% if (tasks.length > 0) { %>
+        
+        <% tasks.forEach(task => { %>
+            
+            <div class="task-container">
+                <a href="/tasks/<%=task._id %>">
+                    <h3 class="title"><%= task.title %></h3>
+                    <p>Task Type: <%= task.type %></p>
+                    <p>Priority: <%= task.priority %></p>
+                    <p>Status: <%= task.status %></p>
+                    <p>Deadline: <%= task.deadline.toISOString().split('T')[0] %></p>
+                </a>
+            </div>        
+
+        <% }) %>
+
+    <% } else { %>
+
+        <p>No open tasks...</p>
+
+    <% } %>
+     
+</div> 

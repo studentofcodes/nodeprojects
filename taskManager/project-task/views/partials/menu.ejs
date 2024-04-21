@@ -1,0 +1,33 @@
+<div class="item3">
+    <h2>Add New Task</h2>
+    <form action="/tasks" method="POST">
+        <ul>
+            <li><label for="title">Title:</label></li>
+            <li><input type="text" name="title" required></li>
+            <li><label for="type">Task Type:</label></li>
+            <li>                
+                <select name="type" required>
+                    <option value=""></option>
+                    <option value="Report">Report</option>
+                    <option value="Data Pull">Data Pull</option>
+                    <option value="Ad-hoc">Ad-hoc</option>
+                    <option value="Others">Others</option>
+                </select>            
+            </li>
+            <li><label for="priority">Priority Level:</label></li>
+            <li><input type="number" name="priority" min="0" max="4" required></li>
+            <li><label for="title">Completion date:</label></li>
+            <li><input type="date" name="deadline" required></li>
+            <li><label for="description">Description:</label></li>
+            <li><textarea name="description" cols="30" rows="10" required></textarea></li>
+            <button>submit</button>
+        </ul>
+    </form>
+    
+    <div class="donate">
+        <ul>
+            <li><button>Donate</button></li>
+            <li><button>Donate</button></li>
+        </ul>
+    </div>
+</div>

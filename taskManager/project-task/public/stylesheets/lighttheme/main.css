@@ -1,0 +1,41 @@
+.item2 { 
+    grid-area: main; 
+    background-color: #c1c1c1;
+    color: #000;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    height: 80vh;
+    overflow: scroll;
+}
+
+.task-container {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    margin: 0 10px 20px; /* Add margin between grid items */
+}
+
+.task-container h3 {
+    color: rgb(0, 161, 0);
+}
+
+.main-details {
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 95%;
+    box-shadow: 5px 10px #888888;
+    transform: none;
+}
+
+.main-details ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-details textarea {
+    width: 95%;
+}

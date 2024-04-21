@@ -1,0 +1,53 @@
+/* Set background color for the entire website */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Light text color */
+  }
+  
+  /* Adjust colors for header */
+  .item1 {
+    background-color: #333; /* Darken header background color */
+    color: #fff; /* Lighten header text color */
+  }
+  
+  .item1 a {
+    color: #fff; /* Lighten anchor text color */
+  }
+  
+  .item1-1 {
+    background-color: #444; /* Darken navbar background color */
+  }
+  
+  .item1-1 a {
+    color: #fff; /* Lighten navbar link text color */
+  }
+  
+  .item1-1 li a:hover {
+    background-color: #555; /* Darken navbar hover background color */
+  }
+  
+  /* Adjust colors for dropdown menu */
+  .dropdown-content {
+    background-color: #555; /* Darken dropdown menu background color */
+  }
+  
+  .dropdown-content a {
+    color: #fff; /* Lighten dropdown menu link text color */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #777; /* Darken dropdown menu hover background color */
+  }
+  
+  /* Adjust colors for footer */
+  .item4 { 
+    background-color: #333; /* Darken footer background color */
+    color: #fff; /* Lighten footer text color */
+  }
+  
+  .item4 a {
+    color: #fff; /* Lighten footer link text color */
+  }
+  

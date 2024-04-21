@@ -1,0 +1,155 @@
+.item1 { 
+    grid-area: header;
+    padding: 10px 10px;
+    background-color: #606060;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 5vh;
+}
+
+.item1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.item1 li {
+    display: inline-block; /* Change from float to inline-block */
+    margin-left: 20px; /* Add margin between list items */
+}
+
+.item1 a {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: white; /* Set color for anchor elements */
+    text-decoration: none; /* Remove underline from anchor elements */
+}
+
+.item1 a img {
+    width: 30px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    fill: white;
+}
+
+.item1-1 {
+    grid-area: navbar;
+    padding: 0;
+    background-color: #404040; /* Adjust background color to match the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.item1-1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.item1-1 a {
+    display: flex; /* Set display to flex */
+    align-items: center; /* Vertically center content */
+    padding: 0;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input[type="text"] {
+    background-color: #ffffff;
+    padding: 14px 16px;
+    border: 0px;
+    border-radius: 15px;
+    height: auto;
+    text-decoration: none;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-container button {
+    background-color: #afafaf;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-container img {
+    height: 10px;
+    color: #404040; /* Adjust icon color */
+}
+
+.item1-1 li {
+    float: left;
+}
+
+.item1-1 li a {
+    display: block;
+    color: white; /* Adjust link color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.item1-1 li a:hover {
+    color: black;
+    background-color: #f2f2f2; /* Adjust hover background color */
+}
+
+.item1-1 .active {
+    color: black;
+    background-color: #dee0ff; /* Adjust active background color */
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

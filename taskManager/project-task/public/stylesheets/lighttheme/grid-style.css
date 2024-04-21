@@ -1,0 +1,26 @@
+/* Set background color for the entire website */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'navbar navbar navbar navbar navbar navbar'
+    'main main main main main menu'
+    'footer footer footer footer footer footer';
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto 300px;
+  gap: 0px;
+  background-color: #c1c1c1;
+  /* Adjusted padding to prevent grid items from extending beyond viewport */
+  margin: 0px;
+  padding: 0px;
+  /* Ensures the grid container fills the entire viewport */
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+

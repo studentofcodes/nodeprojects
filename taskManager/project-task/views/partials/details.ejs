@@ -1,0 +1,30 @@
+<div class="item2 main-details">
+    <h2><%= task.title %></h2>
+    <div >
+        <p><b>Task Type:</b> <%= task.type %></p>
+        <p><b>Status:</b> <%= task.status %></p>
+        <p><b>Priority:</b> <%= task.priority %></p>
+        <p><b>Target Date:</b> <%= task.deadline.toISOString().split('T')[0] %></p>
+        <p><b>Description:</b> <%= task.description %></p>
+    </div>
+
+    <form action="/tasks" method="PATCH">
+        <ul>
+            <li><label for="description">Comment:</label></li>
+            <li><textarea name="description" cols="30" rows="10" required></textarea></li>
+            <li><label for="title">New Status:</label></li>
+            <li>                
+                <select name="status">
+                    <option value=""></option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Abandoned">Abandoned</option>
+                    <option value="On-Hold">On-Hold</option>
+                  </select>            
+            </li>
+            <li><label for="title">Adjust Target date:</label></li>
+            <li><input type="date" name="deadline"></li>
+            <button>submit</button>
+        </ul>
+    </form>
+</div>
